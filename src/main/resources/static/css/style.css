@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-size: 14px;
     color: #141414;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 ul {
@@ -21,3 +21,4 @@ table {
     margin: 0px auto;
     width: 1100px;
 }
+

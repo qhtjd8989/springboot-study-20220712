@@ -2,6 +2,7 @@ package com.springboot.studybosung.web.controller.api.board;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,7 @@ public class BoardController {
 	//게시글 작성
 	@PostMapping("/content") // 동사는 사용하지 않는게 좋다
 	// key값과 변수명이 같으면 생략가능(@RequestParam , key값)								
-	public ResponseEntity<?> addBoard(CreateBoardReqDto createBoardReqDto) { 
+	public ResponseEntity<?> addBoard(@RequestBody CreateBoardReqDto createBoardReqDto) { 
 		boolean responseData = false;
 		try {
 			responseData = boardService.createBoard(createBoardReqDto);

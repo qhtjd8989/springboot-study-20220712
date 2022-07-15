@@ -1,4 +1,4 @@
-package com.springboot.studybosung.web.controller.api;
+package com.springboot.studybosung.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
